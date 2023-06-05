@@ -1,0 +1,46 @@
+section {
+    height: 500px;
+    background-color: white;
+    border: solid black 1px
+    ;
+}
+
+/*Hero Top Page */
+
+.hero {
+    background-color: grey;
+    height: 100vh;
+    color: white;
+    font-size: 40px;
+
+
+}
+
+/* end hero page*/
+
+footer {
+    height: 500px;
+    background-color: black;
+}
+
+/*Nav Section*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 250px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+li {
+    /*width: 175px;*/
+    text-decoration: none;
+}
+
+/*End Nav Section*/
