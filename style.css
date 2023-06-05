@@ -1,3 +1,9 @@
+body {
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+
 section {
     height: 500px;
     background-color: white;
@@ -8,7 +14,7 @@ section {
 /*Hero Top Page */
 
 .hero {
-    background-color: grey;
+    background-color: #323643;
     height: 100vh;
     color: white;
     font-size: 40px;
@@ -44,3 +50,29 @@ li {
 }
 
 /*End Nav Section*/
+
+h1 {
+    font-size: 85px;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 100px;
+}
+
+.name-title {
+    margin-left: 80px;
+}
+
+.button {
+    width: 200px;
+    height: 48px;
+    background-color: #c3bef0;
+    border-radius: 29px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 200px;
+
+  }
