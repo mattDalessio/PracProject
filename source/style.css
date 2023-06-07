@@ -1,45 +1,69 @@
-body {
-    font-family: 'Arimo', sans-serif;
-    font-family: 'Libre Franklin', sans-serif;
-}
+/* *{
+  outline: 1px solid green;
+} */
 
-
-section {
+/* section {
     background-color: white;
     border: solid white 1px;
+} */
+
+/*Removed weird white padding around page*/
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Any link has no decorations and only white */
+a {
+    text-decoration: none;
+    color: white;
 }
 
 /*Hero Top Page */
-
-.hero {
-    background-color: #323643;
+.section-hero {
+    background-color: #5c5470;
     height: 100vh;
     color: white;
     font-size: 40px;
-
-
+    margin-bottom: 0;
 }
-
 /* end hero page*/
-
-footer {
-    height: 500px;
-    background-color: black;
-}
 
 /*Nav Section*/
 
+/*Might Remove*/
+.fixed-navbar {
+    background-color: #323643;
+    position: fixed;
+    top: 10;
+    /*Controls the side to side placement of about and contact*/
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
+
+/*navigation bar flex*/
 nav {
     display: flex;
     justify-content: space-between;
 }
 
+/*removes bullets on the about and contac buttons */
 ul {
     display: flex;
     list-style-type: none;
     width: 250px;
     justify-content: space-around;
+    padding-right: 35px;
     font-size: 30px;
+    margin: 0;
+    position: relative;
+    top: 5px;
 }
 
 li {
@@ -72,8 +96,11 @@ p {
 .name-title {
     margin-left: 80px;
     margin-bottom: 500px;
+    padding-left: 175px;
+    /* scale: 125%; */
 }
 
+/* About button under hero */
 .button {
     width: 155px;
     height: 45px;
@@ -85,50 +112,71 @@ p {
     padding-top: 2px;
     margin-top: 20px;
 
-  }
+}
 
 
-  /*Add Hover to the button*/
-  .button:hover {
+/*Add Hover to the button*/
+.button:hover {
     background-color: #e84a5f;
-  }
+}
 
-  .button:active {
+.button:active {
     background-color: #97cba9;
-    color:#e84a5f
-  }
+    color: #e84a5f
+}
 
-  .logo {
-    height: 180px;
-    margin-top: -40px;
-    margin-left: -12px;
-  }
+.logo {
+    height: 40px;
+    padding-top: 10px;
+    margin-left: 10px;
+    position: relative;
+    bottom: 5px;
+}
 
-  .social-bttns {
+.about-pic-social-bttns {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    padding-top: 40px;
+}
+
+
+.social-bttns {
     /*alter padding to move up or down */
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    padding-left: 50px;
     padding-top: 50px;
-    padding-right: 115px;
-  }
+    padding-bottom: 15px;
+    /* padding-left: 70px; */
+}
 
 
-  /*Effect Social buttons directly*/
-  .social {
-    margin: 10px;
-  }
+/*Effect Social buttons directly*/
+.social {
+    margin-left: 15px;
+}
 
-  .sub-section {
+.sub-section {
     display: flex;
     justify-content: space-around;
-    background-color: #5c5470;
-    padding: 80px;
-  }
-/*about button */
-h2 {
+    background-color: #dbd8e3;
+    /* padding: 100px; */
+    padding: 50px;
+    padding-top: 50px;
+}
+
+/*about button and social buttons */
+.info-container {
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+
+.about-text {
     padding-left: 105px;
+    /* padding-bottom: 100px; */
     font-size: 30px;
-    margin: 0 0 30px 0;
+    margin: 0;
 }
 
 .headshot {
@@ -136,19 +184,69 @@ h2 {
     border-radius: 150px;
 }
 
-
+/* This houses the entire portrait */
 .headshot-container {
-    display: flex;
-    align-items: center;
-    position: 0 50px 0 -2000px;
+    position: 0 50px 0 -500px;
     padding-right: 100px;
+    padding-top: 20px;
 }
 
-.description {
-    font-size:  10px;
+/* This is the container for the about description */
+.description-container {
+    /* font-size:  500px; */
     font-family: "sans-serif";
+
 }
 
-.description p {
+/* This effects the paragraphs in the description container */
+.description-container p {
     padding: 10px;
+    font-size: 25px;
+    word-wrap: inherit
+}
+
+.description-container a {
+    text-decoration: none;
+    color: black;
+}
+
+
+footer {
+    height: 500px;
+    background-color: #2a2438;
+}
+
+
+@media only scnre and (max-width: 1000px) {
+    .sub-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hero-space {
+        display: flex;
+        flex-wrap: flex;
+    }
+
+    /*Added margin bottom to move the text upwards*/
+    .name-title {
+        display: flex;
+        flex-wrap: flex;
+    }
+
+    .info-container {
+        display: flex;
+        flex-wrap: flex;
+        scale: 50%;
+    }
+
+    .headshot-container {
+        display: flex;
+        flex-wrap: flex;
+    }
+
+    .sub-section {
+        padding: 10px;
+    }
+
 }
