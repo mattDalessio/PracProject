@@ -224,6 +224,8 @@ p {
     padding: 10px;
     font-size: 1.5em;
     word-wrap: inherit;
+    text-align: justify;
+    hyphens: auto;
 }
 
 .description-container a {
