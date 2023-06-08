@@ -29,7 +29,7 @@ a {
     background-color: #5c5470;
     height: 100vh;
     color: white;
-    font-size: 40px;
+    font-size: 40vh;
     margin-bottom: 0;
 }
 /* end hero page*/
@@ -52,18 +52,19 @@ nav {
     display: flex;
     justify-content: space-between;
 }
-
+/* ** About and Contact Buttons ** */
 /*removes bullets on the about and contac buttons */
-ul {
+.fixed-navbar ul {
     display: flex;
     list-style-type: none;
-    width: 250px;
+    width: 15vh;
     justify-content: space-around;
-    padding-right: 35px;
-    font-size: 30px;
+    padding-right: 1vh;
+    font-size: 2vh;
+    /* Margin fixed overlapped the about text  */
     margin: 0;
     position: relative;
-    top: 5px;
+    top: .5vh;
 }
 
 li {
@@ -80,24 +81,40 @@ h1 {
 
 p {
     margin: 0;
-    font-size: 30px;
-    font-weight: 100px;
 }
 
 /*the div to move the name title around*/
 .hero-space {
+    position: relative;
     display: flex;
-    height: 100%;
+    z-index: 0;
+    height: 90%;
     justify-content: space-between;
     align-items: center;
 }
 
 /*Added margin bottom to move the text upwards*/
 .name-title {
-    margin-left: 80px;
-    margin-bottom: 500px;
-    padding-left: 175px;
+    position: relative;
+    /* left: 40vh; */
+    margin-left: 3vh;
+    margin-right: 6vh;
+    padding-left: 4vh;
+    /* margin-bottom: 10vh; */
+    /* padding-left: 40vh; */
     /* scale: 125%; */
+}
+
+
+.name-title h1 {
+    font-size: 8vh;
+    /* position: relative top: 40px; */
+}
+
+.name-title p {
+    font-size: 5vh;
+    text-align: left;
+    word-wrap:break-word;
 }
 
 /* About button under hero */
@@ -145,7 +162,7 @@ p {
     /*alter padding to move up or down */
     display: flex;
     justify-content: left;
-    padding-left: 50px;
+    padding-left: 3.3vh;
     padding-top: 50px;
     padding-bottom: 15px;
     /* padding-left: 70px; */
@@ -173,9 +190,9 @@ p {
 }
 
 .about-text {
-    padding-left: 105px;
-    /* padding-bottom: 100px; */
-    font-size: 30px;
+    padding-left: 8.7vh;
+    padding-bottom: 40px;
+    font-size: 2em;
     margin: 0;
 }
 
@@ -193,15 +210,15 @@ p {
 
 /* This is the container for the about description */
 .description-container {
-    /* font-size:  500px; */
+    /* font-size:  500px;  */
     font-family: "sans-serif";
-
 }
+
 
 /* This effects the paragraphs in the description container */
 .description-container p {
     padding: 10px;
-    font-size: 25px;
+    font-size: 1.5em;
     word-wrap: inherit
 }
 
@@ -217,36 +234,35 @@ footer {
 }
 
 
-@media only scnre and (max-width: 1000px) {
-    .sub-section {
-        display: flex;
-        flex-wrap: wrap;
+@media only screen and (max-width: 900px) {
+    .fixed-navbar ul {
+        padding-right: 1vh;
+        font-size: 2vh;
+        /* Margin fixed overlapped the about text  */
+        margin: 0;
+        position: relative;
+        top: .5vh;
+        width: 14vh;
     }
 
-    .hero-space {
-        display: flex;
-        flex-wrap: flex;
-    }
+}
 
-    /*Added margin bottom to move the text upwards*/
+@media only screen and (max-width: 1100px) {
     .name-title {
-        display: flex;
-        flex-wrap: flex;
+        /* margin-left: 1vh; */
+        /* margin-left: -3vh; */
+        padding:0 5px 0 0;
+        scale: 85%;
+        border: 0;
+        /* padding-left: 1vh; */
+
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .logo {
+        height: 2.5vh;
     }
 
-    .info-container {
-        display: flex;
-        flex-wrap: flex;
-        scale: 50%;
-    }
-
-    .headshot-container {
-        display: flex;
-        flex-wrap: flex;
-    }
-
-    .sub-section {
-        padding: 10px;
-    }
 
 }
