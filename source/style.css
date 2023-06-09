@@ -46,7 +46,7 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
     /* Nav-bar needs to be on top */
-    z-index: 99;
+    z-index: 99 !important;
 }
 
 /*navigation bar flex*/
@@ -95,15 +95,34 @@ p {
     align-items: center;
 }
 
+.headshot {
+    width: 370px;
+    border-radius: 175px;
+}
+
+/* This houses the entire portrait */
+.headshot-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 37rem;
+    top: 1rem;
+    bottom: 2rem;
+    /* position: 0 50px 0 -500px;
+    padding-right: 100px;
+    padding-top: 20px; */
+}
+
 /*Added margin bottom to move the text upwards*/
 .name-title {
     display: flex;
     flex-direction: column;
     position: relative;
+    left: 27rem;
     /* left: 40vh; */
     /* margin-left: 3vh; */
-    margin-right: 6vw;
-    padding-left: 4vw;
+    /* margin-right: 6vw;
+    padding-left: 4vw; */
     /* margin-bottom: 10vh; */
     /* padding-left: 40vh; */
     /* scale: 125%; */
@@ -111,7 +130,7 @@ p {
 
 
 .name-title h1 {
-    font-size: 8vw;
+    font-size: 6vw;
     /* position: relative top: 40px; */
 }
 
@@ -165,7 +184,7 @@ p {
 .social-bttns {
     /*alter padding to move up or down */
     display: flex;
-    justify-content: left;
+    justify-content: center;
     padding-left: 3.3vh;
     padding-top: 50px;
     padding-bottom: 15px;
@@ -183,49 +202,55 @@ p {
     justify-content: space-around;
     background-color: #dbd8e3;
     /* padding: 100px; */
-    padding: 50px;
-    padding-top: 50px;
+    /* padding: 50px; */
+    padding: 100px 155px  400px 100px;
 }
 
 /*about button and social buttons */
 .info-container {
-    padding-top: 1px;
-    padding-bottom: 10px;
+    /* padding-top: 1px; */
+    /* position: relative; */
+    bottom: 5vh;
+    /* padding-bottom: 10px; */
+}
+
+.info-container p {
+    padding-top: 1.2rem;
+    position: relative;
+    font-family: Helvetica, sans-serif;
+    overflow-wrap: break-word;
+    letter-spacing: 0.0.2em;
+    margin: 0 0 0 25px;
+    line-height: 1.1;
 }
 
 .about-text {
-    padding-left: 8.7vh;
-    padding-bottom: 40px;
+    text-align: center;
+    padding-left: 3.5rem;
     font-size: 2em;
     margin: 0;
 }
 
-.headshot {
-    width: 300px;
-    border-radius: 150px;
-}
-
-/* This houses the entire portrait */
-.headshot-container {
-    position: 0 50px 0 -500px;
-    padding-right: 100px;
-    padding-top: 20px;
-}
 
 /* This is the container for the about description */
 .description-container {
     /* font-size:  500px;  */
-    font-family: "sans-serif";
+    font-family: Helvetica, sans-serif;
+    /* padding-top: 20px; */
 }
 
 
 /* This effects the paragraphs in the description container */
 .description-container p {
-    padding: 10px;
-    font-size: 1.5em;
-    word-wrap: inherit;
-    text-align: justify;
+    /* padding-top: 15px; */
+    padding-left: 14px;
+    padding-right: 20px;
+    font-size: 1.45rem;
+    word-wrap: break-word;
+    text-align: left;
     hyphens: auto;
+    letter-spacing: 0.0.2em;
+
 }
 
 .description-container a {
