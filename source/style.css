@@ -105,7 +105,7 @@ p {
     display: flex;
     flex-direction: row;
     position: relative;
-    right: 37rem;
+    right: 30rem;
     top: 1rem;
     bottom: 2rem;
     /* position: 0 50px 0 -500px;
@@ -119,6 +119,7 @@ p {
     flex-direction: column;
     position: relative;
     left: 27rem;
+    padding-right: 10px;
     /* left: 40vh; */
     /* margin-left: 3vh; */
     /* margin-right: 6vw;
